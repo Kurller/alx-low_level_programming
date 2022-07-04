@@ -6,9 +6,13 @@
  */
 int main(void)
 {int n;
-for (n = 0; n < 10; n++)
+for (n = 'a'; n <= 'z'; n++)
 {
-	printf("%d\n", n);
+if (n == 'q' || n == 'e')
+{
+continue;
 }
+}
+putchar(n);
 return (0);
-}
+
