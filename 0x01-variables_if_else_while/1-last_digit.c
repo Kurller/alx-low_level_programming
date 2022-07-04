@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
+/**
+ * main -> assign a random number to the variable n
+ * Description:based on a condition
+ * return : always 0
+ */
+
 int main(void)
 {
 int n;
@@ -21,5 +28,6 @@ if (n < 6 && n != 0)
 printf("less than 6 not 0");
 }
 printf("\n");
+
 return (0);
 }
