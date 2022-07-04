@@ -1,5 +1,8 @@
 #include <stdio.h>
-/*main -> assign arandom number to the variable n each time it is executed*/
+/**
+ * main - entry point
+ * Return:always return 0
+ */
 int main(void)
 {char(ch);
 int n;
