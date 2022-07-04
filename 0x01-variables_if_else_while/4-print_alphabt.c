@@ -5,7 +5,8 @@
  * Return:always return 0
  */
 int main(void)
-{int n;
+{
+char n;
 for (n = 'a'; n <= 'z'; n++)
 {
 if (n == 'q' || n == 'e')
