@@ -9,7 +9,7 @@ int main(void)
 int ch;
 for (ch = 0; ch < 10; ch++)
 {
-putchar('0' + ch);
+putchar("%d", n);
 }
 putchar("\n");
 return (0);
