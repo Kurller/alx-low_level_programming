@@ -1,11 +1,16 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ *
+ * Return:always return 0
+ */
 int main(void)
 {
 int ch;
-for (ch = 48; ch <= 57; ch++)
+for (ch = 0; ch < 10; ch++)
 {
-putchar(ch);
+putchar('0' + ch);
 }
-putchar(10);
+putchar("\n");
 return (0);
 }
