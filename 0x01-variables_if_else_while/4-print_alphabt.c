@@ -12,7 +12,7 @@ if (n == 'q' || n == 'e')
 {
 continue;
 }
-}
+
 putchar(n);
 return (0);
 }
