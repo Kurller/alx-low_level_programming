@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
-*main - entry point 
-*
-* Return:always return 0
-*
+ * main - entry point
+*Return:always return 0
 */
 int main(void)
 {
@@ -27,5 +26,6 @@ else
 {
 printf("last digit of %d is %d and is less than 6 and not 0\n", n, lastn);
 }
+
 return (0);
 }
