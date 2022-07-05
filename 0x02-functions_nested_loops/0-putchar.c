@@ -1,4 +1,5 @@
-#include "main"
+
+#include "main.h"
 /**
  * main - prints putchar
  * Return:always return 0
