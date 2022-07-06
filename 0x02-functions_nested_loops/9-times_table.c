@@ -1,18 +1,14 @@
 
 #include "main.h"
 /**
- * main - print 9 times table stating with 0
- *
- * Return:always return 0
- */
-int main(void)
+* main - print  9 times table starting with 0
+*/ 
+void times_table(void)
 {
 int i = 0;
-do {
-printf("9 * %d = %d\n", i, 9 * i);
-i++;
-} while (i <= 10);
+for (i = 0; i < 10 ; i++)
 {
-return (0);
+_putchar((9 * i) + '0');
+_putchar('');
 }
 }
