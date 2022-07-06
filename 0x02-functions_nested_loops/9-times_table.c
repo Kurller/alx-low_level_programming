@@ -17,6 +17,6 @@ for (j = 0; j <= n; j++)
 ch = (i * j);
 _putchar(ch);
 }
-_putchar(' ');
+_putchar(10);
 }
 }
