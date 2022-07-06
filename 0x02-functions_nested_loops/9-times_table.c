@@ -9,14 +9,14 @@ void times_table(void)
 int i;
 int j;
 int n = 9;
-int a;
+int ch;
 for (i = 0; i <= n ; i++)
 {
 for (j = 0; j <= n; j++)
 {
 a = (i * j);
-_putchar(a);
+_putchar(ch);
 }
-_putchar("\n");
+putchar(' ');
 }
 }
