@@ -1,6 +1,5 @@
-
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H_
 
 int _isupper(int c);
 
