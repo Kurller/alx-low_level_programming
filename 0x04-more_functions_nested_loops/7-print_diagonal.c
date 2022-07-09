@@ -2,6 +2,7 @@
 
 /**
 *print_diagonal - print diagonal line
+*@n:print int
 *Return:return 0
 *
 */
