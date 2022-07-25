@@ -24,13 +24,15 @@ return (NULL);
 j = 0;
 while (k < l)
 {
-if (k < i)
+if (k <= i)
 s[k] = s1[k];
-if (k >= i)
+if (k > i)
 {
 s[k] = s2[j];
 j++;
 }
 k++;
 }
+s[k] = '\0';
+return (s);
 }
