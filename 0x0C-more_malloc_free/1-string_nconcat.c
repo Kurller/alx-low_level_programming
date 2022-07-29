@@ -23,7 +23,7 @@ return (i);
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int num, len, j;
+int num, len, i, j;
 char *ptr;
 num = n; 
 if (s1 == NULL) /* account for NULL string */
@@ -35,10 +35,10 @@ return (NULL);
 if (num >= strlen(s2)) /* account for n too big */
 num = _strlen(s2)
 len = _strlen(s1) + num + 1;
-ptr = malloc(sizeof(*ptr) * len)
+ptr = malloc(sizeof(*ptr) * len);
 if (ptr == NULL)
 return (NULL);
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; s1[i] != '\0'; i++)
 ptr[i] = s1[i]
 for (j = 0; j < num; j++)
 ptr[i + j] = s2[j];
