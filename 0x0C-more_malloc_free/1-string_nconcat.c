@@ -1,6 +1,6 @@
 
 #include "main.h"
-#include <stdlib.h>
+#include <stddef.h>
 #include <stdlib.h>
 /**
  * _strlen - calculate and return string length
@@ -33,15 +33,15 @@ s2 = "";
 if (num < 0) /*account for negative n bytes*/
 return (NULL);
 if (num >= _strlen(s2)) /* account for n too big */
-num = _strlen(s2)
+num = _strlen(s2);
 len = _strlen(s1) + num + 1;
 ptr = malloc(sizeof(*ptr) * len);
 if (ptr == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
-ptr[i] = s1[i]
+ptr[i] = s1[i];
 for (j = 0; j < num; j++)
 ptr[i + j] = s2[j];
 ptr[i + j] = '\0';
 return (ptr);
-}
+}i
