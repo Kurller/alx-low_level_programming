@@ -44,4 +44,4 @@ for (j = 0; j < num; j++)
 ptr[i + j] = s2[j];
 ptr[i + j] = '\0';
 return (ptr);
-}i
+}
