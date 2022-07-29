@@ -29,7 +29,7 @@ num = n;
 if (s1 == NULL) /* account for NULL string */
 s1 = "";
 if (s2 == NULL)
-s2 =  "";
+s2 = "";
 if (num < 0) /*account for negative n bytes*/
 return (NULL);
 if (num >= strlen(s2)) /* account for n too big */
