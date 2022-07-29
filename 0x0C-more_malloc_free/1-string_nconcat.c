@@ -11,7 +11,7 @@ int _strlen(char *string)
 {
 int i;
 for (i = 0; string[i] != '\0'; i++)
-           ;
+;
 return (i);
 }
 /**
@@ -27,9 +27,9 @@ int num, len, i, j;
 char *ptr;
 num = n; 
 if (s1 == NULL) /* account for NULL string */
-s1 == "";
+s1 = "";
 if (s2 == NULL)
-s2 == "";
+s2 =  "";
 if (num < 0) /*account for negative n bytes*/
 return (NULL);
 if (num >= strlen(s2)) /* account for n too big */
