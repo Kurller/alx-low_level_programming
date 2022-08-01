@@ -1,3 +1,4 @@
+#include <stdio.h>
 Struct Dog
 {
 char *name;
