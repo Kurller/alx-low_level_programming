@@ -1,12 +1,7 @@
 #include <stdio.h>
-Struct dog
+Struct dog my_dog
 {
 char *name;
 char *owner;
 float age;
-};
-int main(void)
-{
-Struct dog my_dog;
-return (0);
 }
