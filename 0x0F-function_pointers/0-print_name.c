@@ -11,5 +11,14 @@
 
 void print_name_as_is(char *name)
 {
-printf("Hello, my name is %s\n", name);
+char s[20];
+int i = 0;
+while ((s[i] = getchar()) != '\n')
+{ 
+if (s[i] != '\0')
+{
+putchar(s[i]);
+}
+i++;
+}
 }
