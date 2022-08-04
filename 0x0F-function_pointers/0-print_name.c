@@ -11,8 +11,9 @@
 
 void print_name_as_is(char *name)
 {
+int count = 0;
 for (int i = 0;name[i] != '\0'; i++)
 {
- _putchar(name[i]);
+count += _putchar(name[i]);
 }
 }
