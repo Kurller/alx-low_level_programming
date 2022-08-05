@@ -1,19 +1,13 @@
-#include <stdio.h>
-#include "function_pointers.h"
-#include <string.h>
 /**
- * print_name_as_is - prints a name as is
+ *print_name - prints a name as
+ * @name: pointer to name 
+ * @f: function pointer.
  *
- * @name: name of the person
- * Return: Nothing.
- *
+ * Return: void.
  */
 
-void print_name_as_is(char *name)
+void print_name(char *name, void (*f)(char *))
 {
-int count = 0;
-for (int i = 0;name[i] != '\0'; i++)
-{
-count += _putchar(name[i]);
-}
+if (name && f)
+f(name);
 }
