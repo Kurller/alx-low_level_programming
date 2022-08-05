@@ -40,6 +40,7 @@ return (a * b);
  * Return: qoutient.
  */
 int op_div(int a, int b)
+{
 if (b == 0)
 {
 printf("Error\n");

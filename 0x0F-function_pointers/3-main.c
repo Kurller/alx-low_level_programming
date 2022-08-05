@@ -33,4 +33,3 @@ res = (get_op_func(argv[2]))(a, b);
 printf("%d\n", res);
 return (0);
 }
-
