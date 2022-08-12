@@ -11,10 +11,11 @@ nelem = 0;
 while (h != NULL)
 {
 if (h->str == NULL)
-printf("[%d] %\n", 0, "(nil)");
+printf("[%d] %s\n", 0, "(nil)");
 else 
-printf("[%d] %\n", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 h = h->next;
+nelem++;
 }
 return (nelem);
 }	 
