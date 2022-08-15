@@ -11,7 +11,6 @@ int pop_listint(listint_t **head)
 int hnode;
 listint_t *h;
 listint_t *curr;
-int hnode;
 listint_t *h;
 if (*head == NULL)
 return (0);
