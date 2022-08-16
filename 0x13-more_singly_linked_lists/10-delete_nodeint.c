@@ -36,8 +36,5 @@ else
 free(prev);
 *head = next;
 }
-if (index != 0)
-{
 return (1);
-}
 }
