@@ -243,7 +243,8 @@ void close_elf(int elf)
 {
 if (close(elf) == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", elf);
+dprintf(STDERR_FILENO, 
+"Error: Can't close fd %d\n", elf);
 exit(98);
 }
 }
@@ -263,14 +264,16 @@ int o, r;
 o = open(argv[1], O_RDONLY);
 if (o == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+dprintf(STDERR_FILENO, 
+"Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
 header = malloc(sizeof(Elf64_Ehdr));
 if (header == NULL)
 {
 close_elf(o);
-dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+dprintf(STDERR_FILENO, 
+"Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
 r = read(o, header, sizeof(Elf64_Ehdr));
@@ -278,7 +281,8 @@ if (r == -1)
 {
 free(header);
 close_elf(o);
-dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
+dprintf(STDERR_FILENO, 
+"Error: `%s`: No such file\n", argv[1]);
 exit(98);
 }
 check_elf(header->e_ident);
